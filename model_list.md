@@ -1,6 +1,6 @@
 <h1>I AM A MIGHTY HEAD</h1>
 
-<p>Now I wat them Lists for my models<p>
+<p>Now I want them Lists for my models<p>
 
 <hr />
 
@@ -20,7 +20,7 @@
 	</ul>
 <li>Diverse Mobs</li>
 	<ul>
-	<li>Goblin</li>
+	<li><strong>Goblin</strong></li>
 	<li>Skelett</li>
 	<li>Elf</li>
 	<li>Mensch</li>
@@ -28,7 +28,8 @@
 <li>Statics</li>
 	<ul>
 	<li>Stein (<em>ca 20cm, rund</em>)</li>
+	<li>Fels
 	<li>Ast</li>
-	<li>Hammer (<em>aus Stein und ast</em>)</li>
+	<li><strong>Hammer</strong> (<em>aus Stein und Ast</em>)</li>
 	</ul>
 </ol>

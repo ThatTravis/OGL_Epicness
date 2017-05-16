@@ -21,14 +21,14 @@ uniform vec3 skyColour;
 
 void main(void){
 
-	vec4 blendMapColour = texture(blendMap, pass_textureCoordiantes);
+	vec4 blendMapColour = texture(blendMap, pass_textureCoordinates);
 	
 	float backTextureAmount = 1-(blendMapColour.r + blendMapColour.g + blendMapColour.b);
-	vec2 tiledCoords = pass_textureCoordiantes * 40.0;
+	vec2 tiledCoords = pass_textureCoordinates * 40.0;
 	vec4 backgroundTextureColour = texture(backgroundTexture, tiledCoords) * backTextureAmount;
 	vec4 rTextureColour = texture(rTexture, tiledCoords) * blendMapColour.r;
-	vec4 rTextureColour = texture(gTexture, tiledCoords) * blendMapColour.g;
-	vec4 rTextureColour = texture(bTexture, tiledCoords) * blendMapColour.b;
+	vec4 gTextureColour = texture(gTexture, tiledCoords) * blendMapColour.g;
+	vec4 bTextureColour = texture(bTexture, tiledCoords) * blendMapColour.b;
 	
 	vec4 totalColour = backgroundTextureColour + rTextureColour + gTextureColour + bTextureColour + bTextureColour;
 	
